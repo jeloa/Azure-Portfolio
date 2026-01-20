@@ -4,6 +4,13 @@
 [![Sentinel](https://img.shields.io/badge/Microsoft_Sentinel-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white)](https://azure.microsoft.com/en-us/services/microsoft-sentinel/)
 [![KQL](https://img.shields.io/badge/KQL-Kusto-orange?style=for-the-badge)](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/)
 
+---
+
+# 🛡️ Azure Sentinel (SIEM) & RDP Threat Mapping Lab
+
+![Attack Map Screenshot](https://github.com/jeloa/Azure-Portfolio/Security-Engineer/screenshots/sentinel_map.png)
+
+
 ##  Project Overview
 This project involves the deployment of a cloud-native **SIEM (Microsoft Sentinel)** linked to a live **Windows Honeypot**. The goal is to observe real-world RDP brute-force attacks from global sources and visualize the threat landscape in real-time.
 
