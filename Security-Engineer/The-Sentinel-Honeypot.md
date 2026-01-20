@@ -63,6 +63,8 @@ FAILED_RDP_WITH_GEO_CL
          sourcehost = extract(@"sourcehost:([^,]+)", 1, RawData),
 ```
 
+---
+
 ###  Project Insights
 Attack Speed: Brute-force attempts began within 10-15 minutes of the VM being live.
 
