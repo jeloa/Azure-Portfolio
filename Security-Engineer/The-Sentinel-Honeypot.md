@@ -1,15 +1,15 @@
-# 🛡️ Azure Sentinel (SIEM) & RDP Threat Mapping Lab
+#  Azure Sentinel (SIEM) & RDP Threat Mapping Lab
 
 [![Azure](https://img.shields.io/badge/Azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white)](https://azure.microsoft.com/)
 [![Sentinel](https://img.shields.io/badge/Microsoft_Sentinel-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white)](https://azure.microsoft.com/en-us/services/microsoft-sentinel/)
 [![KQL](https://img.shields.io/badge/KQL-Kusto-orange?style=for-the-badge)](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/)
 
-## 📖 Project Overview
+##  Project Overview
 This project involves the deployment of a cloud-native **SIEM (Microsoft Sentinel)** linked to a live **Windows Honeypot**. The goal is to observe real-world RDP brute-force attacks from global sources and visualize the threat landscape in real-time.
 
 By intentionally exposing a Windows VM to the internet and disabling its local firewall, this lab captures failed login attempts, extracts geographical metadata from IP addresses, and plots them on a global heat map using **Kusto Query Language (KQL)**.
 
-### 🎯 Key Learning Objectives
+###  Key Learning Objectives
 * **SIEM Implementation:** Configuring Microsoft Sentinel and Log Analytics Workspaces (LAW).
 * **Security Automation:** Utilizing PowerShell scripts to automate geolocation data extraction from Windows Event Logs.
 * **Threat Visualization:** Creating custom Workbooks to map cyber attacks geographically.
@@ -17,7 +17,7 @@ By intentionally exposing a Windows VM to the internet and disabling its local f
 
 ---
 
-## 🛠️ Tech Stack & Architecture
+##  Tech Stack & Architecture
 * **Cloud Platform:** Microsoft Azure
 * **SIEM:** Microsoft Sentinel
 * **Log Management:** Log Analytics Workspace
@@ -28,7 +28,7 @@ By intentionally exposing a Windows VM to the internet and disabling its local f
 
 ---
 
-## 🚀 Execution Steps
+##  Execution Steps
 
 ### 1. Infrastructure Deployment
 - Created a dedicated **Resource Group** in Azure.
@@ -51,7 +51,7 @@ By intentionally exposing a Windows VM to the internet and disabling its local f
 
 ---
 
-## 📊 KQL Attack Map Query
+##  KQL Attack Map Query
 This query was used to parse the custom logs and generate the geographical visualization:
 
 ```kusto
@@ -61,6 +61,20 @@ FAILED_RDP_WITH_GEO_CL
          destinationhost = extract(@"destinationhost:([^,]+)", 1, RawData),
          username = extract(@"username:([^,]+)", 1, RawData),
          sourcehost = extract(@"sourcehost:([^,]+)", 1, RawData),
+```
+
+###  Project Insights
+Attack Speed: Brute-force attempts began within 10-15 minutes of the VM being live.
+
+Global Reach: Captured thousands of failed login attempts from IPs worldwide, specifically targeting the Administrator account.
+
+Visualization Value: Demonstrated how SIEM tools turn massive amounts of raw log data into actionable security intelligence.
+
+---
+
+###  Disclaimer
+For Educational Purposes Only. This project involves intentionally weakening security for research. Ensure you work in an isolated environment and delete all resources after the lab to prevent unexpected Azure costs.
+
          state = extract(@"state:([^,]+)", 1, RawData),
          country = extract(@"country:([^,]+)", 1, RawData),
          label = extract(@"label:([^,]+)", 1, RawData)
