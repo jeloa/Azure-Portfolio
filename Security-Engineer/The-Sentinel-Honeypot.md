@@ -215,22 +215,9 @@ Within Microsoft Sentinel:
 
 
 
-##  Resume-Ready Bullet
-
-* Built an Azure-based Windows honeypot with exposed RDP and ingested security events into Microsoft Sentinel to detect brute-force attacks, create SIEM analytics rules, and investigate incidents using KQL.
-
----
-
-##  Cleanup
-
-Delete the resource group after completing the lab to avoid unnecessary charges:
-
-```
-rg-sentinel-honeypot
-```
 
 
----
+
 
 ##  Microsoft Sentinel Workbook (SOC Dashboard)
 
@@ -378,13 +365,6 @@ This mapping can be added directly in Sentinel analytics rules under **MITRE ATT
 
 ---
 
-##  Resume-Ready Enhancements
-
-You can now truthfully state:
-
-* Built custom Microsoft Sentinel workbooks to visualize brute-force activity and map detections to MITRE ATT&CK techniques for SOC monitoring and incident response.
-
----
 
 ##  Cleanup
 
