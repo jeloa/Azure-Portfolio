@@ -73,7 +73,7 @@ FAILED_RDP_WITH_GEO_CL
 ###  Project Insights
 - Immediate Exposure: Brute-force attempts began within 10-15 minutes of the VM being live.
 
-- Global Threat Landscape: Captured thousands of login attempts from IPs worldwide, primarily targeting the Administrator account with common passwords.
+- Global Threat Landscape: Captured thousands of login attempts from IPs worldwide, primarily targeting the `Administrator` account with common passwords.
 
 - SIEM Efficiency: Demonstrated the power of SIEM in transforming massive volumes of raw security data into actionable intelligence.
 
