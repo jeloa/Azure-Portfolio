@@ -70,7 +70,7 @@ This lab **intentionally weakens security controls** for learning purposes:
 ###  Create Resource Group
 
 * Name: `rg-sentinel-honeypot`
-* Region: East US (or preferred region)
+* Region: US West 3 (or preferred region)
 
  ![Resource group overview page](screenshots/Resource-group-verview-page.jpg)
 
