@@ -1,6 +1,6 @@
 # Azure Sentinel (SIEM) Honeypot Home Lab
 
-## 🔐 Azure Sentinel Honeypot Homelab
+##  Azure Sentinel Honeypot Homelab
 
 This project is a hands-on walkthrough for building an **Azure-based Honeypot SIEM lab** using **Microsoft Sentinel**.  
 The goal is to simulate real-world attacks, collect telemetry, analyze logs, and visualize attacker activity across the globe.
@@ -11,7 +11,7 @@ This lab demonstrates how cybersecurity, cloud, and automation come together in 
 
 ---
 
-## 🎯 Learning Objectives
+##  Learning Objectives
 
 By completing this lab, you will gain experience in:
 
@@ -25,7 +25,7 @@ By completing this lab, you will gain experience in:
 
 ---
 
-## 🛠 Technologies & Requirements
+##  Technologies & Requirements
 
 ### Cloud & Security
 - Microsoft Azure Account
@@ -47,7 +47,7 @@ By completing this lab, you will gain experience in:
 
 ---
 
-## 🧱 Architecture Overview
+##  Architecture Overview
 
 - Azure Resource Group
 - Vulnerable Windows VM (Honeypot)
@@ -59,7 +59,7 @@ By completing this lab, you will gain experience in:
 
 ---
 
-## 🚀 Step-by-Step Deployment Guide
+##  Step-by-Step Deployment Guide
 
 ---
 
@@ -91,7 +91,7 @@ Sign up at:
 
 #### Administrator Account
 - Create a username and password  
-⚠️ Save these credentials — they are required for RDP access.
+ Save these credentials — they are required for RDP access.
 
 #### Inbound Port Rules
 - Allow selected ports
@@ -183,7 +183,7 @@ Disable Firewall Inside VM
 
 Re-test ping — it should now succeed.
 
-⚠️ Do this ONLY in a lab environment.
+ Do this ONLY in a lab environment.
 
 ---
 
