@@ -75,7 +75,7 @@ This project **intentionally weakens security**:
 
 ---
 
-# 🚀 COMPLETE STEP-BY-STEP GUIDE (BEGINNER FRIENDLY)
+#  COMPLETE STEP-BY-STEP GUIDE (BEGINNER FRIENDLY)
 
 ---
 
